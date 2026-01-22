@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PICT Academic Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Chart.js -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ===== HEADER ===== -->
+<header class="college-header">
+  <div class="container d-flex align-items-center">
+    <img src="images/pict_logo.png" alt="PICT Logo">
+    <div class="ms-3">
+      <h2>Pune Institute of Computer Technology</h2>
+      <p>Affiliated to Savitribai Phule Pune University</p>
+    </div>
+  </div>
+</header>
+
+<!-- ===== NAVIGATION ===== -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+  <div class="container">
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navMenu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#assignments">Our Assignments</a></li>
+        <li class="nav-item"><a class="nav-link" href="#toppers">Toppers</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ===== WELCOME SECTION ===== -->
+<section id="home" class="welcome-section">
+  <div class="container text-center">
+    <h3>Welcome to PICT</h3>
+    <p>
+      Pune Institute of Computer Technology (PICT) is one of the premier engineering
+      institutes in Maharashtra, known for academic excellence, discipline, and
+      outstanding placement records.
+    </p>
+  </div>
+</section>
+
+<!-- ===== ASSIGNMENTS ===== -->
+<section id="assignments" class="container my-5">
+  <h4 class="section-title">Our Assignments</h4>
+  <p class="mt-3">
+    Assignments are designed to strengthen core concepts, enhance problem-solving
+    abilities, and prepare students for competitive exams and placements.
+  </p>
+</section>
+
+<!-- ===== TOPPERS ===== -->
+<section id="toppers" class="container my-5">
+  <h4 class="section-title">Department Toppers</h4>
+
+  <div class="row mt-4 g-4">
+    <div class="col-md-4">
+      <div class="card topper-card h-100">
+        <img src="images/topper1.png" class="card-img-top" alt="Topper 1">
+        <div class="card-body text-center">
+          <h5>Tanay Raundale</h5>
+          <p>Computer Engineering<br>Final Year<br><strong>CGPA: 9.86</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card topper-card h-100">
+        <img src="images/topper2.jpeg" class="card-img-top" alt="Topper 2">
+        <div class="card-body text-center">
+          <h5>Roshesh Shah</h5>
+          <p>Information Technology<br>Final Year<br><strong>CGPA: 9.67</strong></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card topper-card h-100">
+        <img src="images/topper3.png" class="card-img-top" alt="Topper 3">
+        <div class="card-body text-center">
+          <h5>Pranav Mahale</h5>
+          <p>ENTC<br>Final Year<br><strong>CGPA: 9.62</strong></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== STATISTICS ===== -->
+<section class="stats-section">
+  <div class="container">
+    <h4 class="section-title text-center mb-4">Academic Performance Statistics</h4>
+
+    <div class="row align-items-center">
+      <div class="col-md-6 mb-4">
+        <canvas id="statsChart"></canvas>
+      </div>
+
+      <div class="col-md-6">
+        <ul class="stats-list">
+          <li>Academic Excellence – <strong>95%</strong></li>
+          <li>Assignment Completion – <strong>98%</strong></li>
+          <li>Placement Readiness – <strong>92%</strong></li>
+          <li>Competitive Performance – <strong>88%</strong></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="container text-center">
+    <p>
+      © 2026 Pune Institute of Computer Technology<br>
+      Academic Information Portal
+    </p>
+  </div>
+</footer>
+
+<!-- Chart Script -->
+<script>
+const ctx = document.getElementById('statsChart');
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: [
+      'Academic Excellence',
+      'Assignments',
+      'Placement Readiness',
+      'Competitive Performance'
+    ],
+    datasets: [{
+      label: 'Performance (%)',
+      data: [95, 98, 92, 88],
+      backgroundColor: [
+        '#0d6efd',
+        '#198754',
+        '#ffc107',
+        '#dc3545'
+      ]
+    }]
+  },
+  options: {
+    responsive: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+        max: 100
+      }
+    }
+  }
+});
+</script>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

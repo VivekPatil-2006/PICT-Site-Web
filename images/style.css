@@ -1,0 +1,84 @@
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.college-header {
+  background: linear-gradient(90deg, #003366, #0055a5);
+  color: #fff;
+  padding: 20px 0;
+}
+
+.college-header img {
+  width: 70px;
+}
+
+.college-header h2 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.college-header p {
+  margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+}
+
+/* Welcome Section */
+.welcome-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+/* Section Title */
+.section-title {
+  border-bottom: 3px solid #0055a5;
+  display: inline-block;
+  padding-bottom: 5px;
+  font-weight: 600;
+}
+
+/* Cards */
+.topper-card {
+  border: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.topper-card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Statistics */
+.stats-section {
+  background-color: #ffffff;
+  padding: 40px 0;
+}
+
+.stats-list {
+  list-style: none;
+  padding-left: 0;
+  font-size: 15px;
+}
+
+.stats-list li {
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+  background-color: #e9ecef;
+  padding: 20px 0;
+  font-size: 14px;
+}
