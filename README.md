@@ -17,3 +17,6 @@ The PICT Academic Portal is a responsive web-based academic information system d
 
 ## Use Case
 This project can be used as a front-end prototype for academic institutions to display academic achievements, analytics, and structured information in a centralized portal.
+
+## OUTPUT
+<img src="https://github.com/VivekPatil-2006/PICT-Site-Web/blob/main/PICT%20PAGE.png" alt="PICT Page" width=500 height=500>
